@@ -8,19 +8,19 @@ const userSchema = new mongoose.Schema({
         firstname:{
             type: String,
             required: true,
-            minlenght: [3, 'First name must be at least 3 characters long'],
+            minlength: [3, 'First name must be at least 3 characters long'],
         },
         lastname:{
             type: String,
             required: true,
-            minlenght: [3, 'First name must be at least 3 characters long'],
+            minlength: [3, 'First name must be at least 3 characters long'],
         }
     },
     email: {
         type: String,
         required: true,
         unique: true,
-        minlenght: [5, 'Email must be at least 5 characters long'],
+        minlength: [5, 'Email must be at least 5 characters long'],
     },
     password: {
         type: String,
@@ -38,7 +38,7 @@ userSchema.methods.generateAuthToken = function() {
     return token;
 }
 
-userSchema.methods.comparePssword = async function(password){
+userSchema.methods.comparePassword = async function(password){
     return await bcrypt.compare(password, this.password);
 }
 
