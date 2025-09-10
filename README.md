@@ -66,8 +66,8 @@ main.jsx         → Entry point
 
 ### 1. Clone the Repository  
 ```sh
-git clone https://github.com/Sarg3n7/ride-booking-app.git
-cd ride-booking-app
+git clone https://github.com/Sarg3n7/Uber-Clone.git
+cd Uber-Clone
 ```
 
 ### 2. Install Dependencies  
