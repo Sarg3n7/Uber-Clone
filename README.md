@@ -99,12 +99,12 @@ Both `Backend` and `frontend` have a `.env.example` file.
 PORT=5000
 MONGO_URI=for example : mongodb://0.0.0.0/uber-clone
 JWT_SECRET=your_secret_key
-GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+GOOGLE_MAPS_API=your_google_maps_api_key
 ```
 
 **frontend/.env**  
 ```env
-VITE_BACKEND_URL=http://localhost:4000
+VITE_BASE_URL=http://localhost:4000
 VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 ```
 
